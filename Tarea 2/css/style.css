@@ -1,0 +1,94 @@
+/* Css yo */
+.nombreBryan{
+    text-align: center;
+}
+
+.fotoBryan{
+    display: block;
+    margin: 0 auto;
+}
+.textoBryan{
+    text-align: center;
+}
+.linkHobbies{
+    text-align: center;
+}
+/* Css Hobbies */
+.tituloHobbies{
+    text-align: center;
+    color: blue;
+}
+.subtituloHobbies{
+    text-align: center;
+    color: rgb(78, 78, 196);
+}
+.parrafoHobbies{
+    text-align: center;
+}
+.imagenHobbies{
+    display: block;
+    margin: 0 auto;
+}
+/* Css mi familia */
+.nombreFamilia{
+    text-align: center;
+    font-size: 50px;
+    font-style: italic;
+    color: brown;
+    text-transform: uppercase;
+}
+body{
+    background-color: rgb(187, 187, 187);
+    text-align: center;
+    
+}
+
+ol{
+   margin-right: 250px; 
+}
+li{
+    list-style-type: none;
+}
+.subtituloParientes{
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-size: 30px;
+}
+.parientes{
+    margin-top: 10px;
+    font-size: 25px;
+}
+
+.textoCentro{
+    text-align: center;
+}
+
+.imagenCentro{
+    display: block;
+    margin: 0 auto;
+}
+
+table {
+    margin: 0 auto;
+    border-collapse: separate;
+    border-spacing: 5px;
+    background: #000 bottom left repeat-x;
+    color: #fff;
+ }
+ td, th {
+    background: #fff;
+    color: #000;
+ }
+
+.azulRGB{
+    color: rgb(78, 78, 196);
+}
+
+.azul{
+    color: blue;
+}
+
+
+
+
+
+
