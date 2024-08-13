@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color : #95B3D7;
+}
+
+.header-left, .header-right {
+    width: 20%;
+
+}
+
+.header-center {
+    width: 60%;
+    text-align: center;
+}
+
+.universidad {
+    color: #C60000;
+}
+
+.Ingenierias {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.titulo1,
+.titulo2 {
+    border: 2px solid black;
+    margin: auto;
+    width: 49%;
+    height: 40px;
+    text-align: center;
+    background-color: #FFC000;
+}
+
+.titulo2 {
+    background-color: #0070C0;
+
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #404040;
+    padding: 12px;
+}
+
+.nav-item {
+    width: 100px;
+    padding: 15px 0; 
+    text-align: center;
+    flex-grow: 0;
+    cursor: pointer;
+    margin: 0 5px;
+    border-left: 1px solid #404040;
+    height: 10px;
+}
+
+.nav-item:first-child {
+    border-left: none;
+}
+
+.nav-item:nth-child(odd) {
+    background-color: #C60000;
+    color: white;
+}
+
+.nav-item:nth-child(even) {
+    background-color: white;
+    color: black;
+}
+.contenedor2 {
+    width: 60%;
+    margin: 0 auto;
+    background-color: #404040;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    padding: 20px;
+}
+
+main {
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.datos {
+ color: #FFC000;
+}
+
+footer {
+    text-align: center;
+    background-color: #C0504D;
+    padding: 10px;
+   
+}
+.final {
+    color: solid black;
+}
