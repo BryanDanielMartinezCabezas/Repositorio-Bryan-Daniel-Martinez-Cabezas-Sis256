@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primer_Ejercicio</title>
+</head>
+<body>
+    <script>
+        alert("Introduce cuatro números para calcular el mayor");
+        var a=parseInt(prompt("Introduce el primer Número"));
+        var b=parseInt(prompt("Introduce el segundo Número"));
+        var c=parseInt(prompt("Introduce el tercer Número"));
+        var d=parseInt(prompt("Introduce el cuarto Número"));
+
+        switch(true){
+            case(a>b && a>c && a>d):
+                document.writeln("El mayor es: "+a);
+                break;
+            case(b>a && b>c && b>d):
+                document.writeln("El mayor es:"+b);
+                break;
+            case(c>a && c>b && c>d):
+                document.writeln("El mayor es: "+c)
+                break
+            case(d>a && d>b && d>c):
+                document.writeln("El mayor es: "+d)
+                break
+        }
+
+
+
+
+    </script>
+</body>
+</html>

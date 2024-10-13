@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindromo</title>
+</head>
+<body>
+    <script>
+        function reversa(a){
+            let palabraR="";
+            for (let i = a.length -1; i>=0; i--){
+                if (a[i]!== " "){
+                    palabraR=palabraR+a[i];
+                }
+
+            }
+
+            return palabraR.toLowerCase();
+        }
+        function sinEspacio(a){
+            let palabra= "";
+            for (let i = 0; i<a.length;i++){
+                if(a[i]!== " " ){
+                    palabra= palabra+a[i]
+                }
+            }
+            return palabra.toLowerCase()
+        }
+
+        function comparar(palabra1,palabra2){
+
+
+            if(palabra1==palabra2){
+                document.writeln("La palabra es un palindoromo")
+            }
+            else{
+                document.writeln("La palabra no es un palindromo")
+            }
+
+        }
+
+        var a = String(prompt("Escriba su palabra "))
+
+        var b=reversa(a);
+        var c=sinEspacio(a);
+
+        comparar(b,c);
+
+
+
+
+    </script>
+</body>
+</html>
