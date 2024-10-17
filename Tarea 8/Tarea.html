@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operaciones</title>
+</head>
+<body>
+    <form>
+        <h1>Elija la operacion</h1>
+        <select name="operaciones" id="operaciones">
+            <option value="SUMA" id="suma">SUMA</option>
+            <option value="RESTA" id="resta">RESTA</option>
+            <option value="MULTIPLICACION" id="multiplicacion">MULTIPLICACION</option>
+            <option value="DIVISION" id="division">DIVISION</option>
+        </select>
+    </form>
+    <label for="numero1">Numero 1</label><input type="number" id="numero1" >
+    <label for="numero2">Numero 2</label><input type="number" id="numero2" >
+    <input type="button" name="Resolver" id="resolver" value="Resolver" onclick="resolver()">
+    <div id="resultado"></div>
+
+    <script>
+        function sumar(){
+            var numero1= parseInt( document.getElementById("numero1").value);
+            var numero2= parseInt( document.getElementById("numero2").value);
+            var resultado= numero1+numero2;
+            document.getElementById("resultado").innerHTML= "La suma es: "+resultado;
+            }
+        function restar(){
+            var numero1= parseInt( document.getElementById("numero1").value);
+            var numero2= parseInt( document.getElementById("numero2").value);
+            var resultado= numero1-numero2;
+            document.getElementById("resultado").innerHTML= "La resta es: "+resultado;
+            }       
+        function multiplicar(){
+            var numero1= parseInt( document.getElementById("numero1").value);
+            var numero2= parseInt( document.getElementById("numero2").value);
+            var resultado= numero1*numero2;
+            document.getElementById("resultado").innerHTML= "La multiplicacion es: "+resultado;
+            }
+        function division(){
+            var numero1= parseInt( document.getElementById("numero1").value);
+            var numero2= parseInt( document.getElementById("numero2").value);
+            var resultado= numero1/numero2;
+            document.getElementById("resultado").innerHTML= "La division es: "+resultado;
+            }
+        function resolver(){
+            switch(true){
+                case "SUMA"==document.getElementById("operaciones").value:
+                    sumar();
+                    break;
+                case "RESTA"==document.getElementById("operaciones").value:
+                    restar();
+                    break;
+                case "MULTIPLICACION"==document.getElementById("operaciones").value:
+                    multiplicar();
+                    break;
+                case "DIVISION"==document.getElementById("operaciones").value:
+                    division();
+                    break;
+            }
+        }
+    </script>
+</body>
+</html>
