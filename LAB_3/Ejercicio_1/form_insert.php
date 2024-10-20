@@ -5,9 +5,11 @@
 <head>
     <title>Insertar Alumnos</title>
     <style>
-        table { border-collapse: collapse; width: 100%; }
-        th, td { border: 1px solid black; padding: 5px; text-align: left; }
-        input[type="submit"], input[type="reset"] { margin-top: 10px; }
+        table 
+        { border-collapse: collapse; width: 100%; }
+        th, td 
+        
+        { border: 1px solid black; padding: 5px; text-align: left; }
     </style>
 </head>
 <body>
@@ -22,9 +24,11 @@
                 <th>Sexo</th>
                 <th>Carrera</th>
             </tr>
-            <?php for ($i = 1; $i <= 4; $i++) { ?>
+            <?php 
+            
+            for ($i = 1; $i <= 4; $i++) { ?>
             <tr>
-                <td><input type="file" name="fotografia<?php echo $i; ?>" accept="image/*"></td>
+                <td><input type="file" name="fotografia<?php echo $i; ?>" ></td>
                 <td><input type="text" name="nombres<?php echo $i; ?>"></td>
                 <td><input type="text" name="apellidos<?php echo $i; ?>" ></td>
                 <td><input type="text" name="cu<?php echo $i; ?>" ></td>
