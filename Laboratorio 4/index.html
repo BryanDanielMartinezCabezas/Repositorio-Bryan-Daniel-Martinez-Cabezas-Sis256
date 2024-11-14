@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Correos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container my-4 p-4 shadow-lg rounded bg-white">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <h3>Sistema de Correos</h3>
+            <button class="btn btn-primary btn-redactar" id="btnRedactar">Redactar</button>
+        </div>
+
+        <div id="composeForm" class="compose-form mb-4">
+            <h5 class="mb-3">Redactar Correo</h5>
+            <div class="form-group">
+                <label for="toEmail">Para:</label>
+                <input type="email" id="toEmail" class="form-control" required placeholder="correo@ejemplo.com">
+            </div>
+            <div class="form-group">
+                <label for="subject">Asunto:</label>
+                <input type="text" id="subject" class="form-control" required placeholder="Asunto del correo">
+            </div>
+            <div class="form-group">
+                <label for="message">Mensaje:</label>
+                <textarea id="message" class="form-control" required placeholder="Escribe tu mensaje aquí..."></textarea>
+            </div>
+            <div class="d-flex justify-content-end mt-3">
+                <button type="submit" class="btn btn-success me-2" id="btnEnviar">Enviar</button>
+                <button type="button" class="btn btn-secondary" id="btnCancelar">Cancelar</button>
+            </div>
+        </div>
+
+        <div class="d-flex sidebar mb-4">
+            <button id="btnInbox" class="btn btn-light active w-50">Bandeja de Entrada</button>
+            <button id="btnSent" class="btn btn-light w-50">Bandeja de Salida</button>
+        </div>
+
+        <div class="main-content">
+            <table class="table table-hover table-bordered">
+                <thead class="table-primary">
+                    <tr>
+                        <th>Correo</th>
+                        <th>Asunto</th>
+                        <th>Estado</th>
+                        <th>Operación</th>
+                    </tr>
+                </thead>
+                <tbody id="emailList">
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="modal fade" id="emailModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title" id="modalSubject"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p><strong>De: </strong><span id="modalFrom"></span></p>
+                    <hr>
+                    <div id="modalMessage"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
