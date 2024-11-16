@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colores</title>
+</head>
+<body>
+    <select value="menu">
+        <option value="historial">historial</option>
+        <option value="Menu">Menu</option>
+        <option value="Principal">Principal</option>
+        <option value="Botones">Botones</option>
+    </select>
+
+
+    <input type="color" name="color" id="color">
+</body>
+</html>
+
+
+<script>
+    function cargarColores() {
+    var contenedor = document.getElementById('principal');
+    fetch("colores.html")
+        .then(response => response.text())
+        .then(colores => contenedor.innerHTML = data)
+        .catch(error => console.error('Error:', error));
+
+    }
+
+
+
+</script>

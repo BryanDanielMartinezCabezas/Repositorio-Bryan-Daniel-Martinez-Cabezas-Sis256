@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Tabla</title>
+</head>
+<body>
+    <div class="operaciones">
+        <label for="tabla1">Tabla del</label> <input type="number" name="tabla1" id="tabla1">
+        <input type="radio" name="operacion" id="suma" checked><label for="suma">suma</label>
+        <input type="radio" name="operacion" id="resta"><label for="resta">resta</label>
+        <input type="radio" name="operacion" id="multiplicacion"><label for="multiplicacion">multiplicacion</label>
+        <input type="radio" name="operacion" id="division"><label for="division">division</label>
+        <label for="tabla2">Hasta el</label> <input type="number" name="tabla2" id="tabla2">
+        <input type="button" name="Calcular" onclick="crearTabla()" id="Calcular" value="Calcular">       
+    </div>
+    <div class="tablacargada" id="tablacargada"></div>
+</body>
+</html>
+
+
+<script>
+
+function crearTabla(){
+    var contenedortabla= document.getElementById("tablacargada");
+    var numero = parseInt(document.getElementById("tabla1").value);
+    var rango = parseInt(document.getElementById("tabla2").value);
+    var seleccionada= document.getElementsByName("operacion");
+    var resul = "";
+    if(numero>10 || numero<0){
+        alert ("agregue numeros validos");
+    }
+    if(rango<0 || rango >10){
+        alert ("agregue numeros validos");
+    }
+
+    for (var i = 1; i <= rango; i++) {
+        if (seleccionada[0].checked) {  
+            resul += numero + " + " + i + " = " + (numero + i) + "<br>";
+        } if (seleccionada[1].checked) {  
+            resul += numero + " - " + i + " = " + (numero - i) + "<br>";
+        } if (seleccionada[2].checked) { 
+            resul += numero + " * " + i + " = " + (numero * i) + "<br>";
+        } if (seleccionada[3].checked) { 
+            resul += numero + " / " + i + " = " + (numero / i) + "<br>";
+        }
+    }
+
+    contenedortabla.innerHTML = resul;
+
+}
+</script>

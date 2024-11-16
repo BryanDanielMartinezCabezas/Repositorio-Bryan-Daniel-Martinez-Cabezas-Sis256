@@ -1,0 +1,90 @@
+body {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    width: 900px;
+    margin: auto;
+}
+
+
+
+.abajo {
+    display: flex;
+    flex-wrap: nowrap;
+
+}
+
+
+
+.der1 {
+    width: 775px;
+    height: 32px;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+}
+
+.izq1 {
+    width: 125px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    background-color: red;
+    border: 1px solid black;
+}
+
+.button2 {
+    width: 773px;
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+
+}
+
+.button3 {
+    width: 100px;
+    height: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    color: white;
+    text-decoration: none;
+}
+
+
+.operaciones{
+    border: 4px black;
+    width: 600px;
+}
+
+.tablacargada {
+    margin-top: 20px;
+    width: 600px;
+    height: 120px;
+    padding: 10px;
+    border: 1px solid #ccc; 
+    background-color: #f9f9f9; 
+}
+
+
+#historial {
+    width: 100%;
+    height: 50%;
+}
